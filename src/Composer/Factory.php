@@ -290,6 +290,7 @@ class Factory
         $rm->setRepositoryClass('svn', 'Composer\Repository\VcsRepository');
         $rm->setRepositoryClass('hg', 'Composer\Repository\VcsRepository');
         $rm->setRepositoryClass('artifact', 'Composer\Repository\ArtifactRepository');
+        $rm->setRepositoryClass('dir', 'Composer\Repository\FilesystemRepository');
 
         return $rm;
     }
